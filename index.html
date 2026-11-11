@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Semana 5</title>
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+	<main class="contenedor">
+	<h1 id="titulo">Mi primera web</h1>
+	<p id="bienvenido">Bienvenido</p>
+	<button id="boton">Click me</button>
+	<br />
+
+	<!-- formulario donde el usuario pueda poner su nombre y el boton decir enviar y se lanza un mensaje q diga bienvenido -->
+
+	<!-- coloca una barra de sepacion -->
+	<hr>
+
+	<form>
+		<label for="nombre">Nombre:</label>
+		<input type="text" id="nombre" name="nombre">
+		<button type="submit">Enviar</button>
+	</form>
+	<p id="mensaje">&nbsp;</p>
+
+	<hr>
+
+
+		<h1>Personaliza tu tarjeta</h1>
+
+		<section class="tarjeta" id="tarjeta" aria-live="polite">
+			<p>Bienvenido a mi aplicación web</p>
+		</section>
+
+		<div class="controles" aria-label="Colores de la tarjeta">
+			<button class="boton boton--azul" data-color="#2563eb" type="button">Azul</button>
+			<button class="boton boton--verde" data-color="#16a34a" type="button">Verde</button>
+			<button class="boton boton--rojo" data-color="#dc2626" type="button">Rojo</button>
+			<button class="boton boton--restablecer" id="restablecer" type="button">Restablecer</button>
+		</div>
+	</main>
+	<script src="./js/main.js" defer></script>
+</body>
+
+</html>
